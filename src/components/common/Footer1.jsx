@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import LogoDile from "../../assets/LogoDile";
+import LogoDile from "../../assets/LogoMinka";
 import { BsFacebook, BsInstagram, BsTiktok, BsWhatsapp } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 
@@ -8,7 +8,7 @@ export default function Footer1() {
     <footer className="w-full bg-primary-50 py-8">
       <div className="w-full max-w-7xl mx-auto px-0 lg:px-10 flex flex-col lg:flex-row justify-between space-y-4 lg:space-y-0">
         <div className="w-full lg:w-4/12 lg:space-y-4 flex flex-row lg:flex-col justify-between  lg:justify-start">
-          <div className="w-[150px] sm:w-[250px] lg:w-[100%] px-24 ">
+          <div className="w-[250px] sm:w-[250px] lg:w-[100%] px-2 ">
             <LogoDile className={"w-full"} />
           </div>
           <div className="sm:w-[250px] lg:w-full flex items-center justify-between px-8">
@@ -55,7 +55,7 @@ export default function Footer1() {
             <div className="row-span-2 ">
               <div>
                 <h3 className="text-lg font-bold text-primary-800 uppercase flex items-center space-x-2">
-                  <p>Agencias</p>
+                  <p>Contactanos</p>
                 </h3>
 
                 <div className="flex flex-col items-start mt-1 space-y-1">
@@ -65,7 +65,7 @@ export default function Footer1() {
                     preventScrollReset={true}
                     className="text-black transition-colors font-light duration-200 hover:font-bold hover:text-primary-800"
                   >
-                    Wanchaq: Av. Garcilazo N° 415
+                    Direccion: Calle Apurimac Mz A lt 3
                   </Link>
                   <Link
                     to={"https://maps.app.goo.gl/WsYKXFok4uxQVfRY6"}
@@ -73,7 +73,7 @@ export default function Footer1() {
                     preventScrollReset={true}
                     className="text-black transition-colors font-light duration-200 hover:font-bold hover:text-primary-800"
                   >
-                    San Jeronimo: Av. Llocllapata A-4, Urb. Retamales
+                    Celular: 962592286
                   </Link>
                   <Link
                     to={"https://maps.app.goo.gl/vkp9pyHEorLjceQS6"}
@@ -81,25 +81,8 @@ export default function Footer1() {
                     preventScrollReset={true}
                     className="text-black transition-colors font-light duration-200 hover:font-bold hover:text-primary-800"
                   >
-                    Santiago: Calle Siete Mascarones 1190
-                  </Link>
-                  <Link
-                    to={"https://maps.app.goo.gl/ytGZM3gqYzRAxjiA8"}
-                    target="_blank"
-                    preventScrollReset={true}
-                    className="text-black transition-colors font-light duration-200 hover:font-bold hover:text-primary-800"
-                  >
-                    Sicuani: Jr. Tacna N° 106
-                  </Link>
-                  <Link
-                    to={"https://maps.app.goo.gl/VhZ2qMcKqMgMBK4V9"}
-                    target="_blank"
-                    preventScrollReset={true}
-                    className="text-black transition-colors font-light duration-200 hover:font-bold hover:text-primary-800"
-                  >
-                    Quillabamba: Jr. Martin Pio Concha N° 120
-                  </Link>
-                  
+                    Correo: minkacusco@gmail.com
+                  </Link>                  
                 </div>
               </div>
             </div>
@@ -108,7 +91,7 @@ export default function Footer1() {
             <div className="">
               <div>
                 <h3 className="text-lg font-bold text-primary-800 uppercase">
-                  Nosotros
+                  MINKA CUSCO
                 </h3>
 
                 <div className="flex flex-col items-start mt-1 space-y-1">
@@ -118,7 +101,7 @@ export default function Footer1() {
                     preventScrollReset={true}
                     className="text-black transition-colors font-light duration-200 hover:font-bold hover:text-primary-800"
                   >
-                    ¿Quiénes somos?
+                    NOSOTROS
                   </Link>
                   <Link
                     to={"https://clubfamiliadile.com/"}
@@ -126,7 +109,7 @@ export default function Footer1() {
                     preventScrollReset={true}
                     className="text-black transition-colors font-light duration-200 hover:font-bold hover:text-primary-800"
                   >
-                    CLUB FAMILIA DILE
+                    LABORAL
                   </Link>
                   <Link
                     to={"#"}
@@ -134,7 +117,7 @@ export default function Footer1() {
                     preventScrollReset={true}
                     className="text-black transition-colors font-light duration-200 hover:font-bold hover:text-primary-800"
                   >
-                    Transparencia
+                    SUNAFIL
                   </Link>
                   <Link
                     to={"https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Noviembre/COOPAC002-no2023.PDF"}
@@ -142,7 +125,7 @@ export default function Footer1() {
                     preventScrollReset={true}
                     className="text-black transition-colors font-light duration-200 hover:font-bold hover:text-primary-800"
                   >
-                    SBS
+                    SUNAT
                   </Link>
                 </div>
               </div>
@@ -153,7 +136,7 @@ export default function Footer1() {
 
       <div className="mt-14">
         <p className="text-lg text-center">
-          <span className="font-light text-gray-600">Cooperativa de ahorros y créditos DILE Copyright © 2023</span>
+          <span className="font-light text-gray-600">MINKA CUSCO - Asesoria contable y laboral Copyright © 2023</span>
         </p>
       </div>
     

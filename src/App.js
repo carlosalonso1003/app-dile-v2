@@ -6,7 +6,22 @@ import Rapidin from "./components/creditos/Rapidin";
 import CreditoDigital from "./components/creditos/CreditoDigital";
 import CuentaMovil from "./components/creditos/CuentaMovil";
 import CuentaEspecial from "./components/creditos/CuentaEspecial";
-import Home from "./components/home/Home";
+
+
+import Login from "./components/login";
+import Home from "./components/home";
+import GeoDile from "./components/geoDile/inicio";
+import ClubfamiliaDile from "./components/clubFamiliadile/inicio";
+import Expedientes from "./components/expedientes/inicio";
+
+
+//ROUTER ADMINISTRADOR
+import Administrador from "./components/Administrador/inicio";
+import Usuarios from "./components/Administrador/usuarios";
+
+
+//RUTA AÑO
+import Año from "./components/expedientes/año";
 
 import Nosotros from "./components/home/Nosotros";
 import Agencias from "./components/agencias/Agencias";
@@ -18,6 +33,7 @@ import FormRapidin from "./components/home/FormRapidin";
 import { useEffect, useState } from "react";
 import Spinner from "./Spinner";
 import FormGeneral from "./components/home/FormGeneral";
+import Cursos from "./components/cursos/Cursos";
 
 function App() {
   return (
@@ -30,13 +46,32 @@ function App() {
             <Route
               exact
               path="/"
-              element={<CustomPage component={<Home />} />}
+              element={<Login/>}
             />
+
+            <Route
+              exact
+              path="/home"
+              element={<Home/>}
+            />
+
+            <Route exact path="/club-familia/inicio" element={<ClubfamiliaDile/>}/>
+            <Route exact path="/geo-dile/inicio" element={<GeoDile/>}/>
+            <Route exact path="/expedientes/inicio" element={<Expedientes/>}/>
+            {/* ROUTER ADMINISTRADOR */}
+            <Route exact path="/administrador/inicio" element={<Administrador/>}/>
+            <Route exact path="/administrador/usuario" element={<Usuarios/>} />
+
+            {/**RUTA PRUEBA */}
+            <Route exact path="expediente/año" element={<Año/>}/>
+
             <Route
               exact
               path="/credito-pago-diario"
               element={<CustomPage component={<PagaDiario />} />}
             />
+
+
             <Route
               exact
               path="/credito-mas-inclusivo"
@@ -79,6 +114,11 @@ function App() {
               exact
               path="/agencias"
               element={<CustomPage component={<Agencias />} />}
+            />
+            <Route
+              exact
+              path="/cursos"
+              element={<CustomPage component={<Cursos />} />}
             />
             <Route
               exact

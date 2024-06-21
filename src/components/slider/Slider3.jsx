@@ -195,7 +195,7 @@ export default function Slider3({ slidesInfo }) {
 
     return () => {};
   }, [activeSlide]);
-
+/*TRANSICION DE SALIDA DEL SLIDERS */
   return (
     <>
       <div>
@@ -212,11 +212,11 @@ export default function Slider3({ slidesInfo }) {
                 className={`slide slide-${previousSlide}`}
               >
                 <div className="information">
-                  <h2 className="title">
+                  <h2 className={`title text-${slidesInfo[previousSlide - 1].colortexto}`}>
                     {slidesInfo[previousSlide - 1].title}
                   </h2>
                   <div>
-                    <p className="description">
+                    <p className={`description text-${slidesInfo[previousSlide - 1].colortexto}`}>
                       {slidesInfo[previousSlide - 1].description}
                     </p>
 
@@ -225,7 +225,9 @@ export default function Slider3({ slidesInfo }) {
                       target="_blank"
                       preventScrollReset={true}
                     >
-                      <button className="button-info">
+                      <button className={`button-info 
+                      bg-${slidesInfo[previousSlide - 1].bgButton}
+                      text-${slidesInfo[previousSlide - 1].textcolorbutton}`}>
                         {slidesInfo[previousSlide - 1].textButton}
                       </button>
                     </Link>
@@ -244,7 +246,7 @@ export default function Slider3({ slidesInfo }) {
               >
                 <div className="information">
                   <h2
-                    className={`title ${
+                    className={`title text-${slidesInfo[slide.id - 1].colortexto} ${
                       previousSlide ? "animation-title" : ""
                     }`}
                   >
@@ -252,7 +254,7 @@ export default function Slider3({ slidesInfo }) {
                   </h2>
                   <div>
                     <p
-                      className={`description ${
+                      className={`description text-${slidesInfo[slide.id - 1].colortexto} ${
                         previousSlide ? "animation-description" : ""
                       }`}
                     >
@@ -265,8 +267,9 @@ export default function Slider3({ slidesInfo }) {
                     >
                       <button
                         className={`button-info ${
-                          previousSlide ? "animation-button" : ""
-                        }`}
+                          previousSlide ? "animation-button" : ""} 
+                          bg-${slidesInfo[slide.id - 1].bgButton} 
+                          text-${slidesInfo[slide.id - 1].textcolorbutton}`}
                       >
                         {slidesInfo[slide.id - 1].textButton}
                       </button>
@@ -329,9 +332,7 @@ export default function Slider3({ slidesInfo }) {
                     >
                       {index + 1}
                     </div>
-                    <svg viewBox="0 0 40 40" id={`contador-id-${index + 1}`}>
-                      <circle cx="20" cy="20" r="18"></circle>
-                    </svg>
+                    
                   </div>
                 </div>
               ))}

@@ -1,0 +1,51 @@
+.contenedor-slider-inf{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+:root{
+    --size:10;
+    --width-img:200px;
+}
+.box{
+    margin-top:48px;
+    position: relative;
+    width: auto;
+    height: 200px;
+    display: inline-flex;
+    animation: slide 20s infinite linear;
+    -webkit-animation: slide 20s infinite linear;
+    transition: all ease-out 0.0s;
+}
+.card-inf{
+    width: var(--width-img);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(calc(-200px * var(--size)));
+        -webkit-transform: translateX(calc(-200px * var(--size)));
+        -moz-transform: translateX(calc(-200px * var(--size)));
+        -ms-transform: translateX(calc(-200px * var(--size)));
+        -o-transform: translateX(calc(-200px * var(--size)));
+    }
+}

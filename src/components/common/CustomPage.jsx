@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import Navbar1 from "../navbar/Navbar1";
-import Footer from "./Footer";
+
 import Spinner from "../../Spinner";
 
 export default function CustomPage({ component }) {
@@ -26,9 +25,7 @@ export default function CustomPage({ component }) {
         </>
       ) : (
         <>
-          <Navbar1 />
-          {component}
-          <Footer />
+
         </>
       )}
     </div>
